@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" fill="none" role="img" aria-label="Wemonde Full-Stack Architecture Blueprint">
+  <defs>
+    <linearGradient id="arch-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141e33"/>
+      <stop offset="100%" stop-color="#0b101c"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" rx="16" fill="url(#arch-grad)" stroke="rgba(255,255,255,0.08)"/>
+
+  <!-- Architecture Layers -->
+  <text x="32" y="38" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff">The Wemonde Engineering Blueprint</text>
+  <text x="32" y="56" font-family="-apple-system, sans-serif" font-size="11" fill="#94a3b8">Modular, decoupled, and resilient enterprise architecture stack</text>
+
+  <!-- Layer 1: Experience & Edge -->
+  <g transform="translate(32, 78)">
+    <rect width="576" height="60" rx="8" fill="#10192d" stroke="#00f0ff" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="20" y="24" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#00f0ff" letter-spacing="1">LAYER 01: OMNICHANNEL EXPERIENCE &amp; EDGE</text>
+    <text x="20" y="44" font-family="-apple-system, sans-serif" font-size="12" fill="#e2e8f0">Web Apps (SSR/PWA) • Native iOS/Android • Cloud IVR &amp; Voice AI • Edge CDN &amp; WAF</text>
+  </g>
+
+  <!-- Connectors -->
+  <line x1="320" y1="138" x2="320" y2="158" stroke="rgba(255,255,255,0.2)" stroke-width="2" stroke-dasharray="3 3"/>
+
+  <!-- Layer 2: API & Intelligence Orchestration -->
+  <g transform="translate(32, 158)">
+    <rect width="576" height="60" rx="8" fill="#131b31" stroke="#6366f1" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="20" y="24" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#a5b4fc" letter-spacing="1">LAYER 02: API GATEWAY &amp; INTELLIGENCE ENGINE</text>
+    <text x="20" y="44" font-family="-apple-system, sans-serif" font-size="12" fill="#e2e8f0">GraphQL / gRPC Federation • Event-Driven Kafka Stream • LLM Agents &amp; RAG Pipelines</text>
+  </g>
+
+  <!-- Connectors -->
+  <line x1="320" y1="218" x2="320" y2="238" stroke="rgba(255,255,255,0.2)" stroke-width="2" stroke-dasharray="3 3"/>
+
+  <!-- Layer 3: Cloud Native Infrastructure -->
+  <g transform="translate(32, 238)">
+    <rect width="576" height="60" rx="8" fill="#14172e" stroke="#a855f7" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="20" y="24" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#d8b4fe" letter-spacing="1">LAYER 03: CLOUD-NATIVE MICROSERVICES &amp; DATA</text>
+    <text x="20" y="44" font-family="-apple-system, sans-serif" font-size="12" fill="#e2e8f0">Kubernetes Clusters • Distributed SQL / NoSQL • Real-time Data Lake • Redis Cache</text>
+  </g>
+
+  <!-- Connectors -->
+  <line x1="320" y1="298" x2="320" y2="318" stroke="rgba(255,255,255,0.2)" stroke-width="2" stroke-dasharray="3 3"/>
+
+  <!-- Layer 4: Security & Observability -->
+  <g transform="translate(32, 318)">
+    <rect width="576" height="60" rx="8" fill="#0d1828" stroke="#10b981" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="20" y="24" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#34d399" letter-spacing="1">LAYER 04: GOVERNANCE, SECURITY &amp; SRE</text>
+    <text x="20" y="44" font-family="-apple-system, sans-serif" font-size="12" fill="#e2e8f0">Zero-Trust IAM • OpenTelemetry Tracing • Automated CI/CD Canary • ISO 27001 Security</text>
+  </g>
+</svg>

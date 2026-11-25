@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 48" fill="none" role="img" aria-label="Max Lab">
+  <rect x="8" y="12" width="24" height="24" rx="6" fill="#f97316"/>
+  <path d="M14 24L19 19L24 24L19 29Z" fill="#ffffff"/>
+  <text x="40" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="17" font-weight="800" fill="#f8fafc">MAX</text>
+  <text x="82" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="17" font-weight="600" fill="#fdba74">LAB</text>
+</svg>

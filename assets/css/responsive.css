@@ -1,0 +1,531 @@
+/* ==========================================================================
+   WEMONDE ENTERPRISE LANDING PAGE - RESPONSIVE ARCHITECTURE
+   360px to 32000px Screen Adaptation & Media Queries
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   01. ULTRA-WIDE & LARGE DISPLAY SUPPORT (1920px to 32000px)
+   -------------------------------------------------------------------------- */
+/* Ensures no content stretches indefinitely across ultra-wide monitors */
+@media (min-width: 1920px) {
+  :root {
+    --container-max: 1440px;
+  }
+
+  .hero__title {
+    max-width: 820px;
+  }
+}
+
+@media (min-width: 2560px) {
+  :root {
+    --container-max: 1600px;
+    font-size: 18px; /* Slightly upscale typography for high-DPI 4K/8K setups */
+  }
+
+  .section {
+    padding-top: clamp(6rem, 7vw, 10rem);
+    padding-bottom: clamp(6rem, 7vw, 10rem);
+  }
+}
+
+@media (min-width: 3840px) {
+  :root {
+    --container-max: 1800px;
+    font-size: 20px;
+  }
+}
+
+/* Guard against extreme ultra-wide displays (5K, 8K up to 32000px) */
+@media (min-width: 5120px) {
+  :root {
+    --container-max: 2200px;
+    font-size: 24px;
+  }
+
+  .container {
+    max-width: var(--container-max);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   02. DESKTOP & LAPTOP (1025px - 1440px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1280px) {
+  .hero__grid {
+    gap: 2.5rem;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1.2fr;
+    gap: 2rem;
+  }
+
+  .stats-grid {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* Navigation Desktop to Mobile Switch */
+  .nav {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .header__actions .btn {
+    display: none; /* Hide primary header CTA on mobile/tablet to avoid clutter; accessible in drawer */
+  }
+
+  /* Hero Section Single Column */
+  .hero__grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+    text-align: center;
+  }
+
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__badge {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero__lead {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero__cta-group {
+    justify-content: center;
+  }
+
+  .hero__proof {
+    align-items: center;
+  }
+
+  .hero__proof-logos {
+    justify-content: center;
+  }
+
+  .hero__dashboard-wrapper {
+    transform: none !important;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  /* About Section Single Column */
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about__content {
+    order: 1;
+  }
+
+  .about__visual-card {
+    order: 2;
+    max-width: 640px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  /* Solutions 2 Column to 1 Column */
+  .solutions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Process Timeline 4 Column to 2x2 */
+  .process-timeline {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Case Studies */
+  .case-study-card,
+  .case-study-card--reverse {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .case-study-card--reverse .case-study__visual {
+    order: 0;
+  }
+
+  /* Contact Section Single Column */
+  .contact-card {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info {
+    border-right: none;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  /* Footer Grid Tablet Layout */
+  .footer__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer__brand-col {
+    grid-column: span 3;
+    max-width: 480px;
+  }
+
+  .footer__newsletter-col {
+    grid-column: span 3;
+    max-width: 480px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   03. TABLETS & LARGE PHONES (577px - 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  :root {
+    --container-pad: 1.25rem;
+  }
+
+  .section {
+    padding-top: clamp(3rem, 6vw, 4.5rem);
+    padding-bottom: clamp(3rem, 6vw, 4.5rem);
+  }
+
+  /* Statistics 4 Columns to 2x2 Grid */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1.5rem;
+  }
+
+  .stat-item:nth-child(2)::after {
+    display: none;
+  }
+
+  /* About Features */
+  .about__features {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  /* Services Grid Min Width */
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Form Rows */
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* Floating telemetry badges on hero */
+  .hero__floating-card--top {
+    top: -12px;
+    right: 0;
+  }
+
+  .hero__floating-card--bottom {
+    bottom: -12px;
+    left: 0;
+  }
+
+  /* Footer Bottom Alignment */
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer__brand-col,
+  .footer__newsletter-col {
+    grid-column: span 2;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   04. SMALL MOBILES (360px - 576px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 576px) {
+  :root {
+    --container-pad: 1rem;
+  }
+
+  /* Header adjustments */
+  .header__inner {
+    height: 60px;
+    width: 100%;
+  }
+
+  .header__logo img,
+  .header__logo svg {
+    height: 32px;
+    max-width: 150px;
+  }
+
+  .nav-toggle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .mobile-nav-drawer {
+    padding: 1rem 1.25rem 2.25rem 1.25rem;
+  }
+
+  .mobile-nav__header img {
+    height: 32px;
+    max-width: 150px;
+  }
+
+  .mobile-nav__close {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Hero adjustments */
+  .hero {
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .hero__badge {
+    padding: 0.35rem 0.75rem;
+    font-size: 0.75rem;
+    text-align: center;
+    line-height: 1.35;
+  }
+
+  .hero__title {
+    font-size: clamp(1.75rem, 6.8vw, 2.35rem);
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .hero__lead {
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+
+  .hero__cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero__cta-group .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero__proof-logos {
+    gap: 0.75rem;
+    justify-content: center;
+  }
+
+  .hero__proof-item {
+    font-size: 0.75rem;
+  }
+
+  .hero__floating-card {
+    display: none; /* Hide floating badges on narrow screens to avoid obscuring graphic */
+  }
+
+  /* Stats 2x2 to 1 column */
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  .stat-item::after {
+    display: none !important;
+  }
+
+  /* Process Timeline Single Column */
+  .process-timeline {
+    grid-template-columns: 1fr;
+  }
+
+  /* Case study metrics */
+  .case-study__results {
+    grid-template-columns: 1fr;
+  }
+
+  .case-study__meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  /* Solutions metrics */
+  .solution-box__metrics {
+    grid-template-columns: 1fr;
+  }
+
+  /* Testimonial slider */
+  .testimonial-slide {
+    padding: 1.5rem;
+  }
+
+  .testimonial-quote {
+    font-size: var(--text-base);
+  }
+
+  /* FAQ Button padding */
+  .faq-question-btn {
+    padding: 1.25rem 1rem;
+    font-size: var(--text-base);
+  }
+
+  .faq-answer-inner {
+    padding: 0 1rem 1.25rem 1rem;
+  }
+
+  /* Contact Card padding */
+  .contact-info,
+  .contact-form-wrapper {
+    padding: 1.5rem 1.25rem;
+  }
+
+  /* Footer */
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer__brand-col,
+  .footer__newsletter-col {
+    grid-column: span 1;
+  }
+
+  .footer__newsletter-input-group {
+    flex-direction: column;
+  }
+
+  .footer__newsletter-input-group .btn {
+    width: 100%;
+  }
+
+  /* Back to Top button position on mobile */
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+  }
+}
+
+/* Specific 360px Edge Case Testing (Smallest supported width) */
+@media (max-width: 375px) {
+  :root {
+    --container-pad: 0.75rem;
+  }
+
+  .hero__title {
+    font-size: 1.75rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .btn {
+    padding: 0.75rem 1rem;
+    font-size: 0.825rem;
+  }
+
+  .service-card {
+    padding: 1.15rem;
+  }
+
+  .solution-box,
+  .pillar-card,
+  .process-step {
+    padding: 1.15rem;
+  }
+
+  .header__logo img,
+  .header__logo svg {
+    height: 28px;
+    max-width: 135px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   05. ACCESSIBILITY: REDUCED MOTION SUPPORT
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .marquee-track {
+    animation: none !important;
+    overflow-x: auto;
+  }
+
+  .hero__floating-card {
+    animation: none !important;
+  }
+
+  .hero__badge-pulse {
+    animation: none !important;
+  }
+
+  .reveal-on-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   06. PRINT STYLES
+   -------------------------------------------------------------------------- */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  .header,
+  .scroll-progress-bar,
+  .nav-toggle,
+  .mobile-nav-drawer,
+  .mobile-nav-backdrop,
+  .back-to-top,
+  .contact-section,
+  .cta-banner,
+  .slider-controls {
+    display: none !important;
+  }
+
+  .section {
+    padding: 1.5rem 0 !important;
+    page-break-inside: avoid;
+  }
+
+  .case-study-card,
+  .service-card,
+  .pillar-card {
+    border: 1px solid #ccc !important;
+    box-shadow: none !important;
+    background: transparent !important;
+  }
+}

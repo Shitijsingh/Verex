@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 48" fill="none" role="img" aria-label="Microsoft Azure">
+  <path d="M12 34L26 12H38L22 34H12Z" fill="#0089D6"/>
+  <path d="M25 12L31 22L42 34H22L34 16L25 12Z" fill="#0072C6"/>
+  <text x="48" y="29" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="15" font-weight="700" fill="#f8fafc">Azure</text>
+</svg>

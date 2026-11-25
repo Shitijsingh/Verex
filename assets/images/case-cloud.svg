@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" fill="none" role="img" aria-label="Cloud Modernization &amp; DevOps Diagram">
+  <defs>
+    <linearGradient id="cloud-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#131b2e"/>
+      <stop offset="100%" stop-color="#0a0e1c"/>
+    </linearGradient>
+    <linearGradient id="cloud-purple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="380" rx="16" fill="url(#cloud-bg)" stroke="rgba(255,255,255,0.08)"/>
+
+  <text x="32" y="44" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#f8fafc">Multi-Cloud Infrastructure &amp; AI Data Mesh</text>
+  <text x="32" y="64" font-family="-apple-system, sans-serif" font-size="11" fill="#94a3b8">Autonomous autoscaling Kubernetes pods with automated FinOps cost governance</text>
+
+  <!-- Left: Cloud Topology -->
+  <g transform="translate(32, 90)">
+    <rect width="270" height="180" rx="10" fill="#090f1b" stroke="rgba(255,255,255,0.06)"/>
+    <text x="18" y="24" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#64748b">GLOBAL VIRTUAL PRIVATE CLOUD</text>
+
+    <!-- Cloud Zones -->
+    <rect x="18" y="42" width="110" height="56" rx="6" fill="#131e34" stroke="rgba(0,240,255,0.2)"/>
+    <text x="26" y="60" font-family="-apple-system, monospace" font-size="9.5" fill="#00f0ff">AWS ap-south-1</text>
+    <text x="26" y="78" font-family="-apple-system, sans-serif" font-size="8.5" fill="#94a3b8">32 K8s Nodes</text>
+    <circle cx="114" cy="54" r="3" fill="#10b981"/>
+
+    <rect x="142" y="42" width="110" height="56" rx="6" fill="#131e34" stroke="rgba(99,102,241,0.2)"/>
+    <text x="150" y="60" font-family="-apple-system, monospace" font-size="9.5" fill="#a5b4fc">GCP asia-south1</text>
+    <text x="150" y="78" font-family="-apple-system, sans-serif" font-size="8.5" fill="#94a3b8">AI GPU Clusters</text>
+    <circle cx="238" cy="54" r="3" fill="#10b981"/>
+
+    <!-- Shared Mesh Layer -->
+    <rect x="18" y="112" width="234" height="50" rx="6" fill="#0e172a" stroke="rgba(255,255,255,0.08)"/>
+    <text x="28" y="132" font-family="-apple-system, monospace" font-size="9.5" fill="#cbd5e1">Zero-Trust Istio Service Mesh</text>
+    <text x="28" y="148" font-family="-apple-system, sans-serif" font-size="8.5" fill="#10b981">mTLS Encryption • Automated Failover</text>
+  </g>
+
+  <!-- Right: Metrics -->
+  <g transform="translate(320, 90)">
+    <rect width="248" height="180" rx="10" fill="#0c1220" stroke="rgba(255,255,255,0.06)"/>
+
+    <text x="20" y="30" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#94a3b8">FINOPS CLOUD COST REDUCTION</text>
+    <text x="20" y="60" font-family="-apple-system, sans-serif" font-size="28" font-weight="800" fill="#10b981">-38.4%</text>
+    <text x="120" y="58" font-family="-apple-system, sans-serif" font-size="12" fill="#64748b">in 90 Days</text>
+
+    <line x1="20" y1="80" x2="228" y2="80" stroke="rgba(255,255,255,0.08)"/>
+
+    <text x="20" y="104" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#94a3b8">AUTOMATED DEPLOY FREQUENCY</text>
+    <text x="20" y="132" font-family="-apple-system, sans-serif" font-size="24" font-weight="800" fill="#38bdf8">14 Deployments/Day</text>
+    <text x="20" y="152" font-family="-apple-system, sans-serif" font-size="10" fill="#64748b">Canary releases with automated rollback</text>
+  </g>
+
+  <!-- Footer Banner -->
+  <rect x="32" y="290" width="536" height="58" rx="8" fill="#101828" stroke="rgba(255,255,255,0.06)"/>
+  <text x="50" y="324" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="#e2e8f0">Security:</text>
+  <text x="115" y="324" font-family="-apple-system, sans-serif" font-size="12" fill="#94a3b8">100% automated vulnerability scanning &amp; SOC2 compliance enforcement.</text>
+</svg>

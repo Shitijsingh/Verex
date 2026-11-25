@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" fill="none" role="img" aria-label="Apollo Diagnostics Case Study Diagram">
+  <defs>
+    <linearGradient id="apollo-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111c2e"/>
+      <stop offset="100%" stop-color="#0a101d"/>
+    </linearGradient>
+    <linearGradient id="apollo-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="380" rx="16" fill="url(#apollo-bg)" stroke="rgba(255,255,255,0.08)"/>
+
+  <text x="32" y="44" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#f8fafc">Clinical Lab Telemetry &amp; Patient Portal Automation</text>
+  <text x="32" y="64" font-family="-apple-system, sans-serif" font-size="11" fill="#94a3b8">HIPAA-compliant, automated diagnostic result processing &amp; real-time omnichannel delivery</text>
+
+  <!-- Left: Pipeline Steps -->
+  <g transform="translate(32, 90)">
+    <rect width="270" height="180" rx="10" fill="#090f1b" stroke="rgba(255,255,255,0.06)"/>
+    
+    <!-- Step 1 -->
+    <circle cx="28" cy="36" r="10" fill="#06b6d4"/>
+    <text x="25" y="40" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#080d1a">1</text>
+    <text x="48" y="34" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#ffffff">Specimen Barcode Scan</text>
+    <text x="48" y="48" font-family="-apple-system, sans-serif" font-size="9" fill="#64748b">Instant ingestion via Edge IoT scanner</text>
+
+    <line x1="28" y1="48" x2="28" y2="76" stroke="#06b6d4" stroke-dasharray="2 2"/>
+
+    <!-- Step 2 -->
+    <circle cx="28" cy="88" r="10" fill="#6366f1"/>
+    <text x="25" y="92" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#ffffff">2</text>
+    <text x="48" y="86" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#ffffff">LIS HL7 / FHIR Ingestion</text>
+    <text x="48" y="100" font-family="-apple-system, sans-serif" font-size="9" fill="#64748b">Zero data loss with distributed queue</text>
+
+    <line x1="28" y1="100" x2="28" y2="128" stroke="#6366f1" stroke-dasharray="2 2"/>
+
+    <!-- Step 3 -->
+    <circle cx="28" cy="140" r="10" fill="#10b981"/>
+    <text x="25" y="144" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#080d1a">3</text>
+    <text x="48" y="138" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#ffffff">Automated Patient Dispatch</text>
+    <text x="48" y="152" font-family="-apple-system, sans-serif" font-size="9" fill="#10b981">SMS, WhatsApp, and App push notification</text>
+  </g>
+
+  <!-- Right: Key Clinical Metrics -->
+  <g transform="translate(320, 90)">
+    <rect width="248" height="180" rx="10" fill="#0c1220" stroke="rgba(255,255,255,0.06)"/>
+
+    <text x="20" y="30" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#94a3b8">TURNAROUND TIME (TAT)</text>
+    <text x="20" y="60" font-family="-apple-system, sans-serif" font-size="28" font-weight="800" fill="#06b6d4">4.2 Hrs</text>
+    <text x="124" y="58" font-family="-apple-system, sans-serif" font-size="12" fill="#64748b">(down from 18h)</text>
+
+    <line x1="20" y1="80" x2="228" y2="80" stroke="rgba(255,255,255,0.08)"/>
+
+    <text x="20" y="104" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#94a3b8">MONTHLY LAB SAMPLES PROCESSED</text>
+    <text x="20" y="132" font-family="-apple-system, sans-serif" font-size="24" font-weight="800" fill="#10b981">1.2 Million</text>
+    <text x="20" y="152" font-family="-apple-system, sans-serif" font-size="10" fill="#64748b">100% compliance with ISO 15189 standards</text>
+  </g>
+
+  <!-- Footer Banner -->
+  <rect x="32" y="290" width="536" height="58" rx="8" fill="#101828" stroke="rgba(255,255,255,0.06)"/>
+  <text x="50" y="324" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="#e2e8f0">Impact:</text>
+  <text x="105" y="324" font-family="-apple-system, sans-serif" font-size="12" fill="#94a3b8">4.5x faster patient diagnostic delivery and 99.99% data pipeline integrity.</text>
+</svg>

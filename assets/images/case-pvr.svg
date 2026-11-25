@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" fill="none" role="img" aria-label="PVR INOX Case Study Diagram">
+  <defs>
+    <linearGradient id="pvr-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141c2e"/>
+      <stop offset="100%" stop-color="#0a0f1d"/>
+    </linearGradient>
+    <linearGradient id="pvr-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="380" rx="16" fill="url(#pvr-bg)" stroke="rgba(255,255,255,0.08)"/>
+
+  <!-- Cinema Seating & Concurrency Visual -->
+  <text x="32" y="44" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#f8fafc">High-Concurrency Ticketing Engine Architecture</text>
+  <text x="32" y="64" font-family="-apple-system, sans-serif" font-size="11" fill="#94a3b8">Sub-millisecond transactional seat-locking for peak movie blockbuster releases</text>
+
+  <!-- Interactive Grid Representation -->
+  <g transform="translate(32, 90)">
+    <!-- Virtual Seat Layout -->
+    <rect width="260" height="180" rx="10" fill="#090e1a" stroke="rgba(255,255,255,0.06)"/>
+    <text x="18" y="24" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#64748b">AUDITORIUM ENGINE • REAL-TIME STATE</text>
+    
+    <!-- Screen representation -->
+    <path d="M30 46 C 90 38, 170 38, 230 46" stroke="#00f0ff" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <text x="110" y="58" font-family="-apple-system, sans-serif" font-size="8" fill="#00f0ff" letter-spacing="1">SCREEN</text>
+
+    <!-- Seat rows (grid of small rounded rects with different states) -->
+    <!-- Row 1 -->
+    <rect x="36" y="72" width="12" height="12" rx="2" fill="#ef4444"/>
+    <rect x="54" y="72" width="12" height="12" rx="2" fill="#ef4444"/>
+    <rect x="72" y="72" width="12" height="12" rx="2" fill="#ef4444"/>
+    <rect x="90" y="72" width="12" height="12" rx="2" fill="#10b981"/>
+    <rect x="108" y="72" width="12" height="12" rx="2" fill="#10b981"/>
+    <rect x="140" y="72" width="12" height="12" rx="2" fill="#10b981"/>
+    <rect x="158" y="72" width="12" height="12" rx="2" fill="#ef4444"/>
+    <rect x="176" y="72" width="12" height="12" rx="2" fill="#ef4444"/>
+    <rect x="194" y="72" width="12" height="12" rx="2" fill="#10b981"/>
+    <rect x="212" y="72" width="12" height="12" rx="2" fill="#10b981"/>
+
+    <!-- Row 2 -->
+    <rect x="36" y="92" width="12" height="12" rx="2" fill="#10b981"/>
+    <rect x="54" y="92" width="12" height="12" rx="2" fill="#10b981"/>
+    <rect x="72" y="92" width="12" height="12" rx="2" fill="#f59e0b"/>
+    <rect x="90" y="92" width="12" height="12" rx="2" fill="#f59e0b"/>
+    <rect x="108" y="92" width="12" height="12" rx="2" fill="#10b981"/>
+    <rect x="140" y="92" width="12" height="12" rx="2" fill="#10b981"/>
+    <rect x="158" y="92" width="12" height="12" rx="2" fill="#10b981"/>
+    <rect x="176" y="92" width="12" height="12" rx="2" fill="#ef4444"/>
+    <rect x="194" y="92" width="12" height="12" rx="2" fill="#ef4444"/>
+    <rect x="212" y="92" width="12" height="12" rx="2" fill="#10b981"/>
+
+    <!-- Row 3 -->
+    <rect x="36" y="112" width="12" height="12" rx="2" fill="#10b981"/>
+    <rect x="54" y="112" width="12" height="12" rx="2" fill="#10b981"/>
+    <rect x="72" y="112" width="12" height="12" rx="2" fill="#10b981"/>
+    <rect x="90" y="112" width="12" height="12" rx="2" fill="#10b981"/>
+    <rect x="108" y="112" width="12" height="12" rx="2" fill="#00f0ff"/>
+    <rect x="140" y="112" width="12" height="12" rx="2" fill="#00f0ff"/>
+    <rect x="158" y="112" width="12" height="12" rx="2" fill="#10b981"/>
+    <rect x="176" y="112" width="12" height="12" rx="2" fill="#10b981"/>
+    <rect x="194" y="112" width="12" height="12" rx="2" fill="#10b981"/>
+    <rect x="212" y="112" width="12" height="12" rx="2" fill="#10b981"/>
+
+    <!-- Row 4 -->
+    <rect x="36" y="132" width="12" height="12" rx="2" fill="#ef4444"/>
+    <rect x="54" y="132" width="12" height="12" rx="2" fill="#ef4444"/>
+    <rect x="72" y="132" width="12" height="12" rx="2" fill="#10b981"/>
+    <rect x="90" y="132" width="12" height="12" rx="2" fill="#10b981"/>
+    <rect x="108" y="132" width="12" height="12" rx="2" fill="#10b981"/>
+    <rect x="140" y="132" width="12" height="12" rx="2" fill="#10b981"/>
+    <rect x="158" y="132" width="12" height="12" rx="2" fill="#10b981"/>
+    <rect x="176" y="132" width="12" height="12" rx="2" fill="#ef4444"/>
+    <rect x="194" y="132" width="12" height="12" rx="2" fill="#ef4444"/>
+    <rect x="212" y="132" width="12" height="12" rx="2" fill="#ef4444"/>
+
+    <!-- Legend -->
+    <circle cx="44" cy="162" r="3" fill="#10b981"/><text x="52" y="165" font-size="8" fill="#94a3b8">Available</text>
+    <circle cx="106" cy="162" r="3" fill="#ef4444"/><text x="114" y="165" font-size="8" fill="#94a3b8">Booked</text>
+    <circle cx="168" cy="162" r="3" fill="#00f0ff"/><text x="176" y="165" font-size="8" fill="#94a3b8">Selected</text>
+  </g>
+
+  <!-- Metrics Callout Box on right -->
+  <g transform="translate(310, 90)">
+    <rect width="258" height="180" rx="10" fill="#0c1220" stroke="rgba(255,255,255,0.06)"/>
+    
+    <text x="20" y="30" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#94a3b8">PEAK CONCURRENT USERS</text>
+    <text x="20" y="60" font-family="-apple-system, sans-serif" font-size="28" font-weight="800" fill="#ffffff">350,000+</text>
+
+    <line x1="20" y1="80" x2="238" y2="80" stroke="rgba(255,255,255,0.08)"/>
+
+    <text x="20" y="104" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#94a3b8">LATENCY REDUCTION</text>
+    <text x="20" y="132" font-family="-apple-system, sans-serif" font-size="24" font-weight="800" fill="#10b981">-74% Faster</text>
+    <text x="20" y="152" font-family="-apple-system, sans-serif" font-size="10" fill="#64748b">Zero lock conflicts recorded across 10M+ tickets</text>
+  </g>
+
+  <!-- Footer Banner -->
+  <rect x="32" y="290" width="536" height="58" rx="8" fill="#101828" stroke="rgba(255,255,255,0.06)"/>
+  <text x="50" y="324" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="#e2e8f0">Outcome:</text>
+  <text x="110" y="324" font-family="-apple-system, sans-serif" font-size="12" fill="#94a3b8">Zero server crashes during blockbuster nationwide movie releases.</text>
+</svg>

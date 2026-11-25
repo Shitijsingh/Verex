@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 56" fill="none" role="img" aria-label="Wemonde Logo">
+  <defs>
+    <linearGradient id="logo-grad-1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <linearGradient id="logo-grad-2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <!-- Geometric Prism W Emblem -->
+  <g transform="translate(4, 6)">
+    <!-- Ambient glow behind mark -->
+    <path d="M6 10L16 38L26 20L36 38L46 10" stroke="url(#logo-grad-1)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" filter="url(#glow)"/>
+    <!-- Facet 1 -->
+    <path d="M6 10L16 38L22 28L12 10H6Z" fill="url(#logo-grad-1)"/>
+    <!-- Facet 2 -->
+    <path d="M22 28L26 20L30 28L26 38L22 28Z" fill="#ffffff" fill-opacity="0.9"/>
+    <!-- Facet 3 -->
+    <path d="M30 28L36 38L46 10H40L30 28Z" fill="url(#logo-grad-2)"/>
+    <!-- Apex Accent Dot -->
+    <circle cx="26" cy="12" r="3.5" fill="#00f0ff"/>
+  </g>
+  <!-- Wordmark Text -->
+  <text x="64" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif" font-size="24" font-weight="800" letter-spacing="-0.5" fill="#ffffff">
+    WEMONDE
+  </text>
+  <!-- Tagline / Subtitle -->
+  <text x="65" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif" font-size="8.5" font-weight="600" letter-spacing="2.2" fill="#94a3b8">
+    DIGITAL ENGINEERING &amp; AI
+  </text>
+</svg>

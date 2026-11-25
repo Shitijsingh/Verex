@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 48" fill="none" role="img" aria-label="Google Cloud">
+  <path d="M18 28A8 8 0 0 1 24 16A10 10 0 0 1 42 18A7 7 0 0 1 42 32H20A6 6 0 0 1 18 28Z" fill="#4285F4" opacity="0.9"/>
+  <text x="48" y="29" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="14" font-weight="700" fill="#f8fafc">Google</text>
+  <text x="100" y="29" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="14" font-weight="500" fill="#cbd5e1">Cloud</text>
+</svg>
